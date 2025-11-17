@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Stripe from "stripe";
-import ProductCard from "./product-card";
+import ProductCard from "./ProductCard";
 
 interface ProductListProps {
   products: Stripe.Product[];

@@ -1,0 +1,12 @@
+{
+    "Navbar":{
+        "home":"Home",
+        "products":"Prodotti",
+        "checkout":"Carrello"
+    },
+    "HomePage":{
+        "welcome":"Benvenuto in My Ecommerce",
+        "description":"Scopri i prodotti più recenti al miglior prezzo.",
+        "button":"Visualizza tutti i prodotti"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "Navbar":{
+        "home":"Home",
+        "products":"Products",
+        "checkout":"Checkout"
+    },
+    "HomePage":{
+        "welcome":"Welcome to My Ecommerce",
+        "description":"Discover the latest products at the best prices.",
+        "button":"Browse All Products"
+    }
+}

@@ -38,3 +38,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 
+per il deploy 
+    * complete business stripe
+    *  
+
+
+
+Account 
+
+ordini passati
