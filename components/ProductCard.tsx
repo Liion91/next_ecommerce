@@ -3,19 +3,22 @@ import Stripe from "stripe";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "./ui/card";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 interface ProductCardProps {
   product: Stripe.Product;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  
+  const t = useTranslations('ProductsPage');
+
   const price = product.default_price as Stripe.Price;
 
   return (
@@ -46,7 +49,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
               ${(price.unit_amount / 100).toFixed(2)}
             </p>
           )}
-          <Button className="mt-4 bg-black text-white">View Details</Button>
+          <Button className="mt-4 bg-black text-white">{t("button")}</Button>
         </CardContent>
       </Card>
     </Link>

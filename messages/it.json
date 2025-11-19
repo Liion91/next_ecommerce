@@ -5,8 +5,22 @@
         "checkout":"Carrello"
     },
     "HomePage":{
+        "metaTitle":"Homepage di esempio",
+        "metaDescription":"Pagine iniziale di un Ecommerce di esempio",
         "welcome":"Benvenuto in My Ecommerce",
         "description":"Scopri i prodotti più recenti al miglior prezzo.",
         "button":"Visualizza tutti i prodotti"
+    },
+    "ProductsPage":{
+        "metaTitle":"Pagina prodotti",
+        "metaDescription":"Pagina prodotti di esempio",
+        "subtitle":"Tutti i prodotti",
+        "button":"Visualizza prodotto",
+        "searchField": "Cerca prodotti.."
+    },
+    "ProductPage":{
+        "metaTitle":"Pagina prodotto",
+        "metaDescription":"Pagina prodotto di esempio",
+        "button":"Visualizza prodotto"
     }
 }

@@ -3,12 +3,16 @@
 import React, { useState } from "react";
 import Stripe from "stripe";
 import ProductCard from "./ProductCard";
+import { useTranslations } from "next-intl";
 
 interface ProductListProps {
   products: Stripe.Product[];
 }
 
 const ProductList = ({ products }: ProductListProps) => {
+
+  const t = useTranslations('ProductsPage');
+
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const filteredProducts = products.filter((product) => {
@@ -26,7 +30,7 @@ const ProductList = ({ products }: ProductListProps) => {
       <div className="mb-6 flex justify-center">
         <input
           type="text"
-          placeholder="Search products..."
+          placeholder={t('searchField')}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full max-w-md rounded-xl border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
